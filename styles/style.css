@@ -17,6 +17,8 @@ ul a{
 }
 header{
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     background-color: red;
@@ -30,5 +32,37 @@ header{
     list-style: none;
     margin-right: 40px;
     font-size: 18px;
-    
+}
+/* landing section */
+.landing{
+    background-color: rgb(0, 255, 179);
+    /* top right bottom left */
+    padding: 130px 60px 60px 20px;
+}
+.half{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.greetin{
+    display: flex;
+    flex-direction: column;
+}
+.greeting p {
+    color: blue;
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 25px;
+}
+.greeting img{
+    float: left;
+    /* top bottom right left */
+    padding: 0px 20;
+}
+.skills{
+    padding-top: 50px;
+    text-align: right;
+}
+.skills img{
+    margin: 5px;
 }
